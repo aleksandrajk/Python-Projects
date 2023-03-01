@@ -1,0 +1,31 @@
+{% macro card(video) -%}
+      <div class='card'>         
+        <div class='thumbnailContainer'>
+          <a href="https://www.youtube.com/watch?v={{video['videoId']}}">
+          <img
+            src="{{ video['thumbnails'] | highest_quality_image}}"
+            alt="thumbnail"
+            class='thumbnail'/>
+            </a>
+        </div>
+            
+      <div class='infoContainer'>
+        <div class='channelLogoContainer'>
+          <img 
+            src="https://pentagram-production.imgix.net/cc7fa9e7-bf44-4438-a132-6df2b9664660/EMO_LOL_02.jpg?rect=0%2C0%2C1440%2C1512&w=640&crop=1&fm=jpg&q=70&auto=format&fit=crop&h=672"
+            alt="channel"
+            class='channelLogo'
+          />
+        </div>
+        <a href="https://www.youtube.com/watch?v={{video['videoId']}}">
+        <div class='info'>
+          <p>{{ video['title'] }}</p>
+          <span>League of Legends </span></br>
+          <span>{{ video['stats']['views'] | numberize }} views • {{ video['publishedTimeText'] }}</span>
+        </div>
+        </a>
+      </div>
+    </div>
+  
+     
+{%- endmacro %}
