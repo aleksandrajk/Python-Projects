@@ -3,7 +3,7 @@
 The project is a YouTube clone that was built using Python and Flask.    
 
 **--Concepts used--**        
-Web Development: GET Requests, Macros, Markup Filters. 
+Web Development: GET Requests, Macros, Markup Filters     
 Python: Dictionaries, Lists of Dictionaries, Named Arguments, Functions. 
 
 **Demo Link:** https://api-or-youtube-app.aleksandrajk.repl.co
