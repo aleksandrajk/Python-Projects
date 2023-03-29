@@ -1,6 +1,6 @@
 # YouTube App | API
 
-The project is a YouTube clone that was built using Python and Flask.    
+The project is a dynamic YouTube clone of a videos page that utilizes the YouTube API to fetch and display video content. Built using Python, the web application fetches data from the YouTube API and displays it in an easy-to-use and user-friendly format. Users can search for videos, view video details, and click on the icons directly on the YT video page. This project is a great example of how to use APIs to fetch and display content in a dynamic and interactive way.   
 
 **--Concepts used--**        
 Web Development: GET Requests, Macros, Markup Filters     
