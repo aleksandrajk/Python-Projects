@@ -21,7 +21,7 @@ Before running or contributing to this project, ensure that you have the followi
 
 
 ## Usage
-1. Populate the `where.data` file with university names (one per line) that you want to geocode and visualize.
+1. Populate the `where.data` file with place names (one per line) that you want to geocode and visualize.
 2. Follow the "Getting Started" instructions to set up and run the project.
 3. View the geocoded data on the Google Map visualization by opening `where.html` in a web browser.
 4. Customize the project by modifying the Python scripts or HTML file as needed.
@@ -40,7 +40,7 @@ Retrieving http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address
 Retrieved 2063 characters {    "results" : [  
 {u'status': u'OK', u'results': ... }
 ```
-  __The geoload.py can be stopped at any time__, and there is a counter that you can use to limit the number of calls to the geocoding API for each run.
+   __The geoload.py can be stopped at any time__, and there is a counter that you can use to limit the number of calls to the geocoding API for each run.
 * __geodump.py__: Python script for exporting geocoded data from the database to a JavaScript file.
  A run of the geodump.py program is as follows:
 ```
