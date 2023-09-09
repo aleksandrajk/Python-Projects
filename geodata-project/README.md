@@ -31,7 +31,7 @@ Before running or contributing to this project, ensure that you have the followi
 The project structure is organized as follows:
 * __geoload.py__: Python script for retrieving and geocoding university location data using the Google Geocoding API and storing it in an SQLite database. The program reads input lines from the where.data file, and for each line, it checks whether the information is already present in the database. If the location's data is not found in the database, the program uses the geocoding API to fetch the data and then stores it in the database.
 
-Here is a sample run:
+  Here is a sample run:
 ```
 Found in database  University of Hong Kong, Illinois Institute of Technology, Bradley University
 Found in database  Northeastern University
@@ -40,15 +40,23 @@ Retrieving http://maps.googleapis.com/maps/api/geocode/json?sensor=false&address
 Retrieved 2063 characters {    "results" : [  
 {u'status': u'OK', u'results': ... }
 ```
-__The geoload.py can be stopped at any time__, and there is a counter that you can use to limit the number of calls to the geocoding API for each run.
+  __The geoload.py can be stopped at any time__, and there is a counter that you can use to limit the number of calls to the geocoding API for each run.
 * __geodump.py__: Python script for exporting geocoded data from the database to a JavaScript file.
-A run of the geodump.py program is as follows:
-<img width="1337" alt="terminal_result" src="https://github.com/aleksandrajk/Python-Projects/assets/55165756/144456c1-4e18-4297-8859-35228019e710">
+ A run of the geodump.py program is as follows:
+```
+Alberta, Canada 53.9332706 -116.5765035
+Avenida 1, Calle 9 Heredia 86 Heredia, Heredia, 40101, Costa Rica 9.9987964 -84.11147489999999
+Portland, OR, USA 45.515232 -122.6783853
+188 records written to where.js
+Open where.html to view the data in a browser
+
+Process finished with exit code 0
+```
 
 * __where.data__: Input file containing university names.
-* __geodata.sqlite__: SQLite database to store geocoded location data. Once you have some data loaded into geodata.sqlite, you can visualize the data using the (geodump.py) program.  This program reads the database and writes tile file (where.js) with the location, latitude, and longitude in the form of executable JavaScript code. 
+* __geodata.sqlite__: SQLite database to store geocoded location data. Once you have runned __geoload.py__ and have some data loaded into geodata.sqlite, you can visualize the data using the (geodump.py) program.  This program reads the database and writes tile file (where.js) with the location, latitude, and longitude in the form of executable JavaScript code. 
 * __where.js__: a JavaScript list of lists that we have written to where.js by running geodump.py.
-Here is the format of the where.js file:
+ Here is the format of the where.js file:
 ```
 myData = [
 [40.6963857,-89.6160811, 'Bradley University, 1501 West Bradley Avenue, Peoria, IL 61625, USA'],
