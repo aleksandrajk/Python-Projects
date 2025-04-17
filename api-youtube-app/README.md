@@ -6,6 +6,6 @@ The project is a dynamic YouTube clone of a videos page that utilizes the YouTub
 Web Development: GET Requests, Macros, Markup Filters     
 Python: Dictionaries, Lists of Dictionaries, Named Arguments, Functions    
 
-**Demo Link:** https://api-or-youtube-app.aleksandrajk.repl.co
+**Demo Link:** [https://api-or-youtube-app.aleksandrajk.repl.co](https://7dd72799-1ada-4489-a89b-7b913a40737c-00-3ukfi0fj0bkgn.kirk.replit.dev)
 
 <img width="1440" alt="API YT" src="https://user-images.githubusercontent.com/55165756/222289019-abaa8de1-c42b-473c-9114-6d33ff5db9b5.png">
