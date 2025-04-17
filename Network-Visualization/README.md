@@ -17,7 +17,7 @@ Before you can use this project, make sure you have the following prerequisites 
 
 - Python 3.x
 - SQLite
-- D3.js (included via CDN or hosted locally)
+- D3.js 
 
 ## Getting Started
 Should you decide to restart the program and request it to crawl additional pages, it will refrain from re-crawling any pages that are already present in the database. Upon restart, it selects a random, unvisited page as its starting point. Therefore, each successive run of spider.py builds upon the previous one. It's worth noting that you can maintain multiple starting points within the same database, which are referred to as "webs" within the program. The spider makes random selections from all unvisited links across all the webs.
